@@ -7,11 +7,15 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "e2e:test": "detox test -c ios.release",
+    "e2e:build": "detox build -c ios.release"
   },
   "dependencies": {
+    "randomcolor": "^0.5.4",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-swipeable-views-native": "^0.13.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
